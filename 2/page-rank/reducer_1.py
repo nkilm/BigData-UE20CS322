@@ -21,7 +21,13 @@ def read_from_mapper(w_file_path: str) -> None:
         for line in sys.stdin:
 
             line = line.strip()
-            src, dest = line.split("\t")
+
+            try:
+                src, dest = line.split()
+                src = src.strip()
+                dest = dest.strip()
+            except:
+                continue
 
             try:
                 src = int(src)
@@ -44,7 +50,7 @@ def read_from_mapper(w_file_path: str) -> None:
                 adj_list.clear()  # reset
 
                 node = src  # move to next node
-                
+                # print(node,dest)
                 adj_list.append(dest)
 
         # For last line
