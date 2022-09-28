@@ -2,7 +2,12 @@
 
 import sys
 
-""" Mapper for Task 1 """
+""" 
+Mapper for Task 1
+
+Team ID: BD1_616_659_661_667
+
+"""
 
 for line in sys.stdin:
 

@@ -2,8 +2,12 @@
 
 import sys
 
-""" Reducer for Task 1 """
+""" 
+Reducer for Task 1 
 
+Team ID: BD1_616_659_661_667
+
+"""
 
 def read_from_mapper(w_file_path: str) -> None:
     """ Reads input from the mapper as stdin """
@@ -40,7 +44,7 @@ def read_from_mapper(w_file_path: str) -> None:
                 adj_list.clear()  # reset
 
                 node = src  # move to next node
-                # print(node,dest)
+                
                 adj_list.append(dest)
 
         # For last line
