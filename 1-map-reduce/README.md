@@ -6,6 +6,6 @@
 
 - For Windows, open `Git Bash` in the folder
 ```bash
-cat path_to_dataset | python3 mapper.py [command line arguments] | sort -k 1,1 |python3 reducer.py > output.txt
+cat path_to_dataset | python3 mapper.py [command line arguments] | sort -k 1,1 | python3 reducer.py > output.txt
 ```
 > NOTE: Use only `Git Bash` to avoid getting errors.
